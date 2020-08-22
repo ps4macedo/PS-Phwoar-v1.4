@@ -1,21 +1,21 @@
 <html manifest="offline.cache">
 <head>
-<title>PS-Phwoar! Host Menu v1.4 By Leeful</title>
+<title>Menu Jailbreak 6.72 v1.0 </title>
 <link rel="stylesheet prefetch" href="style.css">
 </head>
 <body>
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre><div id=CacheProgress><div id=CacheBar></div></div></div>
 <input autofocus="autofocus" type="range" id="NOUP" style="opacity:0;display:none;">
 <div id=SubTabA class=SubTabTxtAnim></div><div id=SubTabB class=SubTabLineAnim></div>
-<div id=Title class=Title>Hen</div>
+<div id=Title class=Title>HEN</div>
 <div id=Popup onclick="Popup.classList.remove('animation');"><div id="PopIcon"></div><div id="PopTitle"></div></div>
 <div id=BottomPopup></div>
-<div id=InfoButton><div id=R1BUTTON></div>- Show Payload Info</div>
+<div id=InfoButton><div id=R1BUTTON></div>- Exibir Informações do Payload</div>
 <div id=AutoHenInfo><div id=L2BUTTON></div>- AutoHen</div>
 <div id=MenuContainer class=MenuContainer onclick=GetInfo()>
 <div id=MainMenu class=MenuPos>
-<div  PL-Title="Old HenVR Versions" PL-Bin="SUBMENU 1"  PL-Ver=""                              PL-Desc="A collection of previously released versions of Hen with VR support." class="Box Icon2">&#xf468;</div
-><div PL-Title="Old Hen Versions"   PL-Bin="SUBMENU 2"  PL-Ver=""                              PL-Desc="A collection of previously released versions of Hen." class="Box Icon2">&#xf4a1;</div
+<div  PL-Title="Old HenVR Versions" PL-Bin="SUBMENU 1"  PL-Ver=""                              PL-Desc="A collection of previously released versions of Hen with VR support." class="Box Icon2">&#xf468;</div>
+<div PL-Title="Old Hen Versions"   PL-Bin="SUBMENU 2"  PL-Ver=""                              PL-Desc="A collection of previously released versions of Hen." class="Box Icon2">&#xf4a1;</div
 ><div PL-Title="Hen"                PL-Bin="Hen214.bin" PL-Ver="v2.1.4 - By The Darkprogramer" PL-Desc="Enable Homebrew, Enable Debug Settings, Enable Update Blocker,<br>Enable External HDD Support, PSVR Support via Firmware Spoof to v7.02,<br>Remote PKG Installer Support, 7.xx External HDD Support,<br>Full Rest Mode Support, Debug Trophies Support, Enable UART,<br>Enable Blocked Screenshots, Enable Remote Play, Save Data Mounting Patches."  class="Box Icon"><img src="img/hen.svg"></div
 ><div PL-Title="Bin Loader"         PL-Bin="BINLOADER"  PL-Ver="v1.0 - By Specter"             PL-Desc="Loads a bin file sent to the PS4 IP address on port 9020.<br><br>This version of Bin Loader can also load extra large bin files up to 12.58MB in size." class="Box Icon">&#xf019;</div
 ><div PL-Title="FTP Server"         PL-Bin="FTP.bin"    PL-Ver="v1.3.2 - By LightningMods"     PL-Desc="A full access FTP server for the PS4. Connect your FTP client to the IP address that the popup message tells you. The FTP port number is 1337." class="Box Icon"><img src="img/ftp.svg"></div
@@ -148,8 +148,8 @@ function readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');
 c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)
 return c.substring(nameEQ.length,c.length);}
 return null;}
-function DLProgress(e){ScrOverlay.style.display="block";Percent=(Math.round(e.loaded/e.total*100));cacheUPDtxt.innerHTML="Installing Offline Cache: "+Percent+"%";CacheBar.style.width=Percent+'%';}
-function DisplayCacheProgress(){setTimeout(function(){cacheUPDtxt.innerHTML="Cache Installed Successfully";},1000);setTimeout(function(){ScrOverlay.style.opacity="0";LS.IsItCached="yes";},2500);setTimeout(function(){ScrOverlay.style.display="none";},3500);}
+function DLProgress(e){ScrOverlay.style.display="block";Percent=(Math.round(e.loaded/e.total*100));cacheUPDtxt.innerHTML="Instalando a Cache Offline: "+Percent+"%";CacheBar.style.width=Percent+'%';}
+function DisplayCacheProgress(){setTimeout(function(){cacheUPDtxt.innerHTML="Cache Instalada com Sucesso!";},1000);setTimeout(function(){ScrOverlay.style.opacity="0";LS.IsItCached="yes";},2500);setTimeout(function(){ScrOverlay.style.display="none";},3500);}
 window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};window.applicationCache.onerror=function(e){window.cacheUPDtxt.innerHTML="Error Installing Cache";};if(LS.KernEpochDiff==null){LS.KernEpochDiff=0;}
 if(LS.CurrentTemp==null){LS.CurrentTemp=79;}
 if(RC('KernEpochDiff')==null){CC('KernEpochDiff',LS.KernEpochDiff,365);}
